@@ -1,0 +1,19 @@
+{
+    "name": "LuaPlayerYT (RU)",
+    "words": ["Image.draweasy", "sound.cloud"],
+    "files": [
+        "buttons.lua",
+        "Color.lua",
+        "Image.lua",
+        "intraFont.lua",
+        "LUA.lua",
+        "PMP.lua",
+        "screen.lua",
+        "sound.lua",
+        "System.lua",
+        "timer.lua"
+    ],
+    "settings": {
+        "Lua.runtime.version": "Lua 5.1"
+    }
+}
