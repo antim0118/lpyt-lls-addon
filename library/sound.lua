@@ -6,16 +6,6 @@ sound = {
     MP3 = 1,
     AT3_1 = 5,
     AT3_2 = 6,
-    OGG_1 = 7,
-    OGG_2 = 8,
-    OGG_3 = 9,
-    OGG_4 = 10,
-    OGG_5 = 11,
-    OGG_6 = 12,
-    OGG_7 = 13,
-    OGG_8 = 14,
-    OGG_9 = 15,
-    OGG_10 = 16,
     WAV_1 = 17,
     WAV_2 = 18,
     WAV_3 = 19,
@@ -49,8 +39,8 @@ sound = {
     WAV_31 = 47
 };
 
----@alias soundEnum `sound.MP3`|`sound.AT3_1`|`sound.AT3_2`|`sound.OGG_1`|`sound.OGG_2`|`sound.OGG_3`|`sound.OGG_4`|`sound.OGG_5`|`sound.OGG_6`|`sound.OGG_7`|`sound.OGG_8`|`sound.OGG_9`|`sound.OGG_10`|`sound.WAV_1`|`sound.WAV_2`|`sound.WAV_3`|`sound.WAV_4`|`sound.WAV_5`|`sound.WAV_6`|`sound.WAV_7`|`sound.WAV_8`|`sound.WAV_9`|`sound.WAV_10`|`sound.WAV_11`|`sound.WAV_12`|`sound.WAV_13`|`sound.WAV_14`|`sound.WAV_15`|`sound.WAV_16`|`sound.WAV_17`|`sound.WAV_18`|`sound.WAV_19`|`sound.WAV_20`|`sound.WAV_21`|`sound.WAV_22`|`sound.WAV_23`|`sound.WAV_24`|`sound.WAV_25`|`sound.WAV_26`|`sound.WAV_27`|`sound.WAV_28`|`sound.WAV_29`|`sound.WAV_30`|`sound.WAV_31`
----@alias soundNumber 1|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|45|46|47
+---@alias soundEnum `sound.MP3`|`sound.AT3_1`|`sound.AT3_2`|`sound.WAV_1`|`sound.WAV_2`|`sound.WAV_3`|`sound.WAV_4`|`sound.WAV_5`|`sound.WAV_6`|`sound.WAV_7`|`sound.WAV_8`|`sound.WAV_9`|`sound.WAV_10`|`sound.WAV_11`|`sound.WAV_12`|`sound.WAV_13`|`sound.WAV_14`|`sound.WAV_15`|`sound.WAV_16`|`sound.WAV_17`|`sound.WAV_18`|`sound.WAV_19`|`sound.WAV_20`|`sound.WAV_21`|`sound.WAV_22`|`sound.WAV_23`|`sound.WAV_24`|`sound.WAV_25`|`sound.WAV_26`|`sound.WAV_27`|`sound.WAV_28`|`sound.WAV_29`|`sound.WAV_30`|`sound.WAV_31`
+---@alias soundNumber 1|5|6|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|45|46|47|48
 
 ---предзагрузка звука
 ---@param path string путь к файлу .mp3/.wav/.ogg/.at3
