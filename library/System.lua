@@ -181,5 +181,3 @@ function System.USB.deactivate() end;
 ---@return -2145112057|546|number
 ---@nodiscard
 function System.USB.getState() end;
-
-return System;

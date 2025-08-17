@@ -45,5 +45,3 @@ function screen.drawCircle(x, y, radius, color) end;
 ---@param y3 number координата третьей вершины
 ---@param color ColorInstance цвет треугольника
 function screen.drawTriangle(x1, y1, x2, y2, x3, y3, color) end;
-
-return screen;

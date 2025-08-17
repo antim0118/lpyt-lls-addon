@@ -31,5 +31,3 @@ function timer.reset(timered) end;
 ---удаление таймера
 ---@param timered TimerInstance заранее созданный таймер
 function timer.remove(timered) end;
-
-return timer;

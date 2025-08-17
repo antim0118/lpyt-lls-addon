@@ -81,5 +81,3 @@ function sound.state(channel) end;
 ---выгрузка аудиофайла из канала (работает только с .wav/.at3/.ogg, для .mp3 достаточно sound.stop())
 ---@param channel soundEnum|soundNumber канал для выгрузки
 function sound.unload(channel) end;
-
-return sound;

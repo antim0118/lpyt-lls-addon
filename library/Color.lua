@@ -20,5 +20,3 @@ function Color.new(r, g, b, a) end;
 ---@return { r: number, g: number, b: number, a: number }
 ---@nodiscard
 function Color.get(color, RGBA) end;
-
-return Color;

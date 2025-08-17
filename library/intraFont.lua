@@ -150,5 +150,3 @@ function intraFont.textH(font) end;
 ---выгрузить шрифт из памяти
 ---@param font intraFontInstance предварительно загруженный шрифт
 function intraFont.unload(font) end;
-
-return intraFont;

@@ -65,5 +65,3 @@ function Image.draw(texture, x, y, w, h, color, srcx, srcy, srcw, srch, rotation
 ---@param GU_LINEAR? boolean интерполяция текстуры. true=LINEAR, false=NEAREST
 ---@param GU_REPEAT? boolean повторение текстуры. true=REPEAT, false=CLAMP
 function Image.draweasy(texture, x, y, color, rotation, alpha, alignMode, GU_LINEAR, GU_REPEAT) end;
-
-return Image;

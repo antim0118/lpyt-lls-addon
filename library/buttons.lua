@@ -54,5 +54,3 @@ function buttons.held(button) end;
 ---@return boolean
 ---@nodiscard
 function buttons.released(button) end;
-
-return buttons;

@@ -37,5 +37,3 @@ function PMP.setVolume(volume) end;
 ---остановить видео
 ---@param pointer PMPPointer указатель на запущенный PMP
 function PMP.stop(pointer) end;
-
-return PMP;

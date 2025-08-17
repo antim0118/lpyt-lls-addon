@@ -41,5 +41,3 @@ function LUA.getFPS() end;
 ---вызов задержки
 ---@param ms number миллисекунды
 function LUA.sleep(ms) end;
-
-return LUA;
