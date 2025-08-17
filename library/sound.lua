@@ -75,6 +75,7 @@ function sound.stop(channel) end;
 ---получение информации о канале
 ---@param channel soundEnum|soundNumber канал для получения информации
 ---@return { state: "playing"|"paused"|"stopped", free: boolean, volume: number } state Возвращает таблицу вида {state(playing/paused/stopped), free(true/false), volume(0-100)}
+---@nodiscard
 function sound.state(channel) end;
 
 ---выгрузка аудиофайла из канала (работает только с .wav/.at3/.ogg, для .mp3 достаточно sound.stop())

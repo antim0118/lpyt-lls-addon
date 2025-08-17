@@ -7,6 +7,7 @@ timer = {};
 
 ---создание нового таймера
 ---@return TimerInstance
+---@nodiscard
 function timer.create() end;
 
 ---запуск таймера
@@ -16,6 +17,7 @@ function timer.start(timered) end;
 ---получение времени, отсчитанного таймером в миллисекундах
 ---@param timered TimerInstance заранее созданный таймер
 ---@return number ms миллисекунды
+---@nodiscard
 function timer.time(timered) end;
 
 ---остановка таймера
