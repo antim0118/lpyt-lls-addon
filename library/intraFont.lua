@@ -20,11 +20,12 @@ intraFont = {
 ---@alias intraFontScrollEnum `intraFont.SCROLL_LEFT`|`intraFont.SCROLL_SEESAW`|`intraFont.SCROLL_RIGHT`|`intraFont.SCROLL_THROUGH`
 ---@alias intraFontScrollNumbers 8192|8704|9216|9728
 
----загрузка шрифта в формате .pgf
+---загрузка шрифта в формате .pgf/.ttf/.otf
 ---@param path string путь к файлу
+---@param size number размер шрифта
 ---@return intraFontInstance
 ---@nodiscard
-function intraFont.load(path) end;
+function intraFont.load(path, size) end;
 
 ---выставление необходимых параметров шрифта
 ---@param font intraFontInstance предварительно загруженный шрифт
