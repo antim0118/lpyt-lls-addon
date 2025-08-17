@@ -47,7 +47,7 @@ sound = {
     WAV_29 = 45,
     WAV_30 = 46,
     WAV_31 = 47
-}
+};
 
 ---@alias soundEnum `sound.MP3`|`sound.AT3_1`|`sound.AT3_2`|`sound.OGG_1`|`sound.OGG_2`|`sound.OGG_3`|`sound.OGG_4`|`sound.OGG_5`|`sound.OGG_6`|`sound.OGG_7`|`sound.OGG_8`|`sound.OGG_9`|`sound.OGG_10`|`sound.WAV_1`|`sound.WAV_2`|`sound.WAV_3`|`sound.WAV_4`|`sound.WAV_5`|`sound.WAV_6`|`sound.WAV_7`|`sound.WAV_8`|`sound.WAV_9`|`sound.WAV_10`|`sound.WAV_11`|`sound.WAV_12`|`sound.WAV_13`|`sound.WAV_14`|`sound.WAV_15`|`sound.WAV_16`|`sound.WAV_17`|`sound.WAV_18`|`sound.WAV_19`|`sound.WAV_20`|`sound.WAV_21`|`sound.WAV_22`|`sound.WAV_23`|`sound.WAV_24`|`sound.WAV_25`|`sound.WAV_26`|`sound.WAV_27`|`sound.WAV_28`|`sound.WAV_29`|`sound.WAV_30`|`sound.WAV_31`
 ---@alias soundNumber 1|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|45|46|47
@@ -56,39 +56,39 @@ sound = {
 ---@param path string путь к файлу .mp3/.wav/.ogg/.at3
 ---@param channel soundEnum|soundNumber канал для загрузки звука
 ---@param loadToRam? boolean загрузка в ОЗУ (true, если вы хотите, чтобы после выхода из спящего режима консоль продолжала воспроизведение .wav, однако объём ОЗУ будет постепенно уменьшаться; на PSP GO при использовании внутренней памяти в любом случае воспроизведение будет продолжаться)
-function sound.cloud(path, channel, loadToRam) end
+function sound.cloud(path, channel, loadToRam) end;
 
 ---воспроизведение аудиофайла
 ---@param channel soundEnum|soundNumber канал для загрузки звука
 ---@param loop? boolean повторение проигрывания
-function sound.play(channel, loop) end
+function sound.play(channel, loop) end;
 
 ---чтение ID3 тегов из mp3 файла (из уже загруженного канала)
 ---@return { title: string, artist: string, album: string, year: string, genre: string, id3v: string, track: number } info Возвращает таблицу с информацией
 ---@nodiscard
-function sound.info() end
+function sound.info() end;
 
 ---приостановка воспроизведения
 ---@param channel soundEnum|soundNumber канал для приостановки
-function sound.pause(channel) end
+function sound.pause(channel) end;
 
 ---изменение громкости воспроизведения
 ---@param channel soundEnum|soundNumber канал для изменения громкости
 ---@param volumeL number новая громкость - левый канал (0-100)
 ---@param volumeR number новая громкость - правый канал (0-100)
-function sound.volume(channel, volumeL, volumeR) end
+function sound.volume(channel, volumeL, volumeR) end;
 
 ---остановка воспроизведения
 ---@param channel soundEnum|soundNumber канал для остановки
-function sound.stop(channel) end
+function sound.stop(channel) end;
 
 ---получение информации о канале
 ---@param channel soundEnum|soundNumber канал для получения информации
 ---@return { state: "playing"|"paused"|"stopped", free: boolean, volume: number } state Возвращает таблицу вида {state(playing/paused/stopped), free(true/false), volume(0-100)}
-function sound.state(channel) end
+function sound.state(channel) end;
 
 ---выгрузка аудиофайла из канала (работает только с .wav/.at3/.ogg, для .mp3 достаточно sound.stop())
 ---@param channel soundEnum|soundNumber канал для выгрузки
-function sound.unload(channel) end
+function sound.unload(channel) end;
 
-return sound
+return sound;

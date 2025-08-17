@@ -19,40 +19,40 @@ buttons = {
     cross = 16384,
     square = 32768,
     home = 65536
-}
+};
 
 ---@alias buttonEnum `buttons.select`|`buttons.start`|`buttons.up`|`buttons.right`|`buttons.down`|`buttons.left`|`buttons.l`|`buttons.r`|`buttons.triangle`|`buttons.circle`|`buttons.cross`|`buttons.square`|`buttons.home`
 ---@alias buttonNumbers 1|8|16|32|64|128|256|512|4096|8192|16384|32768|65536
 
 ---считывание состояния кнопок
-function buttons.read() end
+function buttons.read() end;
 
 ---считывание состояния стика по оси х
 ---@return number Lx число от -128 до 127
 ---@nodiscard
-function buttons.Lx() end
+function buttons.Lx() end;
 
 ---считывание состояния стика по оси y
 ---@return number Ly число от -128 до 127
 ---@nodiscard
-function buttons.Ly() end
+function buttons.Ly() end;
 
 ---проверка на то, была ли кнопка нажата только что
 ---@param button buttonEnum|buttonNumbers кнопка из класса buttons
 ---@return boolean
 ---@nodiscard
-function buttons.pressed(button) end
+function buttons.pressed(button) end;
 
 ---проверка на то, удерживается ли кнопка в данный момент
 ---@param button buttonEnum|buttonNumbers кнопка из класса buttons
 ---@return boolean
 ---@nodiscard
-function buttons.held(button) end
+function buttons.held(button) end;
 
 ---проверка на то, была ли кнопка только что отпущена
 ---@param button buttonEnum|buttonNumbers кнопка из класса buttons
 ---@return boolean
 ---@nodiscard
-function buttons.released(button) end
+function buttons.released(button) end;
 
-return buttons
+return buttons;
