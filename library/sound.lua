@@ -74,8 +74,8 @@ function sound.pause(channel) end;
 
 ---изменение громкости воспроизведения
 ---@param channel soundEnum|soundNumber канал для изменения громкости
----@param volumeL number новая громкость - левый канал (0-100)
----@param volumeR number новая громкость - правый канал (0-100)
+---@param volumeL number громкость в левом канале (0-100)
+---@param volumeR number громкость в правом канале (0-100)
 function sound.volume(channel, volumeL, volumeR) end;
 
 ---остановка воспроизведения
